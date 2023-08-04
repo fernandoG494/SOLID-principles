@@ -5,7 +5,8 @@
   // Alto Acoplamiento
   class Person {
     constructor(
-      public name: string,
+      public firstName: string,
+      public lastName: string,
       public gender: Gender,
       public birthdate: Date,
     ){}
@@ -16,11 +17,12 @@
       public email: string,
       public role: string,
       private lastAccess: Date,
-      name: string,
+      firstName: string,
+      lastName: string,
       gender: Gender,
       birthdate: Date,
     ){
-      super(name, gender, birthdate);
+      super(firstName, lastName, gender, birthdate);
       this.lastAccess = new Date();
     }
 
@@ -35,7 +37,8 @@
       public lastFolderOpen: string,
       email     : string,
       role      : string,
-      name      : string,
+      firstName : string,
+      lastName  : string,
       gender    : Gender,
       birthdate : Date,
     ){
@@ -43,7 +46,8 @@
         email,
         role,
         new Date(),
-        name,
+        firstName,
+        lastName,
         gender,
         birthdate
       )
@@ -56,6 +60,7 @@
     'fernando@google.com',
     'F',
     'Fernando',
+    'Garcia',
     'M',
     new Date('1985-10-21')
   );
