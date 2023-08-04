@@ -57,7 +57,7 @@ class CompuestoAB {
   public elementA;
   public elementB;
 
-  constructor({a1, a2, a3, a4}: CompuestoABProps){
+  constructor({a1, a2, a3, a4 }: CompuestoABProps){
     this.elementA = new ClaseA({ a1, a2 });
     this.elementB = new ClaseB({ a3, a4 });
   };
